@@ -30,7 +30,7 @@ export default function NotesClient() {
   return (
     <div className={css.container}>
       <header className={css.toolbar}>
-        <SearchBox onChange={(e: any) => handleSearch(e.target.value)} />
+        <SearchBox onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleSearch(e.target.value)} />
         <button className={css.button} onClick={() => setIsModalOpen(true)}>
           Create note +
         </button>
